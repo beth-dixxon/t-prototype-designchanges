@@ -1,0 +1,61 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+  Project name
+        <span class="govuk-caption-xl">Design sprint</span>
+      </h1>{{releaseVersion | log }}
+      <p>
+        This is a prototype which will enable you to document design changes between prototype iterations. Driven from research sessions.
+      </p>
+
+      <h2 class="govuk-heading-m">About this project</h2>
+
+      <p>This project is researching into X and Y. The project is with client <a href="">blah</a> and blah and blah. </p>
+
+      <p>You can change the service name by editing the file '/app/config.js'.</p>
+
+      <table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">Timeline</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Project</th>
+      <th scope="col" class="govuk-table__header">Date</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Inception</th>
+      <td class="govuk-table__cell">19 - 20 April</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__cell">Design sprint</th>
+      <td class="govuk-table__cell">19th - 27th April</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Research analysis</th>
+      <td class="govuk-table__cell">4th May</td>
+    </tr>
+  </tbody>
+</table>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          <a href="/docs/tutorials-and-examples">Example pages and documentation</a>
+        </li>
+        <li>
+          <a href="https://design-system.service.gov.uk">GOV.UK Design System</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+{% endblock %}
